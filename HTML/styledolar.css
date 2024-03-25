@@ -1,0 +1,34 @@
+body {
+  background: url("/Archivos/hacker.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#preciodolar {
+  color: red;
+  font-size: 30px;
+}
+
+header {
+  background-color: #f9c33d;
+  text-align: center;
+  padding: 10px;
+}
+
+.anuncio {
+  color: blue;
+  font-size: 18px;
+}
+
+.imagen {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 150px;
+}
+
+.virus {
+  display: block;
+  margin: 0 auto;
+}
