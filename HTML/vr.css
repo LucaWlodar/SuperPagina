@@ -1,0 +1,50 @@
+body {
+    background: url("https://th.bing.com/th/id/R.7631615ffece7d31602021ea3615c3d7?rik=boxyECV%2fR1u9mg&pid=ImgRaw&r=0");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.recuadros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cuadro {
+    color: rgb(252, 252, 252);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.cuadro:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.anuncio {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 50px;
+    text-align: center;
+    height: 100px;
+}
+
+
