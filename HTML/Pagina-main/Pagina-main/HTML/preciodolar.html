@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>compratrankipa</title>
+  <link href="styledolar.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="anuncio">
+            Compra dólar en Poladolar
+        </div>
+    </header>
+
+    <h1 style='color:beige'</style>Precio del dólar</h2>
+    <span id="preciodolar"></span>
+
+    <img src="/Archivos/virus.jpg" alt="Virus" class="virus" />
+
+    <script>
+      const span_dollar = document.getElementById("preciodolar");
+
+      fetch("https://dolarapi.com/v1/dolares/blue")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then((data) => {
+          span_dollar.innerHTML = data.venta;
+        })
+        .catch((error) => {
+          console.error('There has been a problem with your fetch operation:', error);
+        });
+        
+    </script>
+    
+    <img src="/Archivos/estafa.jpeg" alt="Motorola Edge40" class="imagen" />
+
+    <footer>
+        <p>© 2024 Compratrankipa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
